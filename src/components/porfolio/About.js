@@ -1,0 +1,213 @@
+import React from "react";
+
+const About = () => {
+  return (
+    <div className="card-inner animated active" id="about-card">
+      <div className="card-wrap">
+        {/* <!-- About --> */}
+        <div className="content about">
+          {/* <!-- title --> */}
+          <div className="title">
+            <span className="first-word">About</span> Me
+          </div>
+
+          {/* <!-- content --> */}
+          <div className="row">
+            <div className="col border-line-v">
+              <ul className="text-box">
+                <li>
+                  A result oriented 6.6 years of professional experience in
+                  <strong>UI/ Front End Web Development</strong> using different types of Web
+                  Technologies.
+                </li>
+                <li>
+                  Strong development and hands on experience in
+                  <strong>
+                    React JS, Angular, HTML5, CSS3, SASS, SCSS, Bootstrap, JavaScript and jQuery.
+                  </strong>
+                </li>
+                <li>
+                  Expertise in <strong>debugging and troubleshooting</strong> existing code using
+                  Firebug and Developer Tools.
+                </li>
+                <li>
+                  Strong experience with <strong>Cross Browser Compatibility issues</strong> and
+                  <strong>Optimization of </strong> for fast loading, including CSS, JavaScript and
+                  HTML minify and best practices of
+                  <strong>Responsive Web Design (RWD)</strong> using Media Queries.
+                </li>
+                <li>
+                  Working experience in parallax scrolling single page websites and web portals.
+                </li>
+                <li>
+                  Good understanding of <strong>OOPS Concept</strong> and
+                  <strong>Database</strong>.
+                </li>
+                <li>Good understanding of Web application development cycle.</li>
+                <li>
+                  Well experienced in using version control systems
+                  <strong>SVN, GIT, Bit Bucket</strong>.
+                </li>
+                <li>Independent problem solving ability and easily adopting new technologies.</li>
+                <li>
+                  Working in Restaurant Management, Supply chain management (SCM), E-Commerce and
+                  Healthcare domain.
+                </li>
+                <li>
+                  Areas worked on –
+                  <strong>
+                    PSD to HTML, Email Template, Signature Template, Audio/Video, Animations
+                  </strong>
+                  .
+                </li>
+                <li>
+                  Focused and goal driven with strong work ethics, continuously striving for
+                  improvement coupled with commitment to offer quality work.
+                </li>
+                <li>Adaptable and quick learner with skills to work under pressure.</li>
+              </ul>
+              <ul className="text-box">
+                <li className="name">Expertise In</li>
+                <li>Domain Registration</li>
+                <li>Website &amp; Email Hosting</li>
+                <li>Search Engine Optimization(SEO)</li>
+                <li>Responsive Web Design &amp; Web Development</li>
+                <li>Responsive Newsletter/Mailer Design &amp; Development</li>
+                <li>Responsive Landing Pages</li>
+                <li>Responsive Bootstrap Websites</li>
+                <li>Responsive eCommerce Website</li>
+                <li>PSD/JPG/PNG to HTML5</li>
+                <li>PDF to HTML5</li>
+              </ul>
+            </div>
+            <div className="clear"></div>
+          </div>
+        </div>
+
+        {/* <!-- Services --> */}
+        <div className="content services">
+          {/* <!-- title --> */}
+          <div className="title">
+            <span className="first-word">Working</span> Areas
+          </div>
+
+          {/* <!-- content --> */}
+          <div className="row service-items border-line-v">
+            {/* <!-- service item --> */}
+            <div className="col col-xl-6 col-md-6 col-sm-12 border-line-h">
+              <div className="service-item">
+                <div className="icon">
+                  <span className="fa fa-code"></span>
+                </div>
+                <div className="name">Web Development</div>
+                <p>
+                  Modern and mobile-ready website that will help you reach all of your marketing, It
+                  attracts the right kinds of visitors.
+                </p>
+              </div>
+            </div>
+
+            {/* <!-- service item --> */}
+            <div className="col col-xl-6 col-md-6 col-sm-12 border-line-h">
+              <div className="service-item">
+                <div className="icon">
+                  <span className="fa fa-paint-brush"></span>
+                </div>
+                <div className="name">Responsive Web Design</div>
+                <p>
+                  The website respond to the user's behavior and environment based on screen size,
+                  platform and orientation, automatically respond to the user's preferences
+                </p>
+              </div>
+            </div>
+
+            {/* <!-- service item --> */}
+            <div className="col col-xl-6 col-md-6 col-sm-12">
+              <div className="service-item">
+                <div className="icon">
+                  <span className="fa fa-html5"></span>
+                </div>
+                <div className="name">PSD to HTML</div>
+                <p>
+                  A web page is designed in a Photoshop Document (PSD) or Zeplin file and then
+                  converted to code (using HTML, CSS, and JavaScript).
+                </p>
+              </div>
+            </div>
+
+            {/* <!-- service item --> */}
+            <div className="col col-xl-6 col-md-6 col-sm-12">
+              <div className="service-item">
+                <div className="icon">
+                  <span className="fa fa-desktop"></span>
+                </div>
+                <div className="name">Unit Testing/Debugging</div>
+                <p>
+                  Finding and fixing defects in the early stage of the software development cycle,
+                  so it will help to saving much testing time.
+                </p>
+              </div>
+            </div>
+
+            <div className="clear"></div>
+          </div>
+        </div>
+
+        {/* <!-- Fun Fact --> */}
+        <div className="content fuct">
+          {/* <!-- title --> */}
+          <div className="title">
+            <span className="first-word">Knowledge</span> About
+          </div>
+
+          {/* <!-- content --> */}
+          <div className="row fuct-items">
+            {/* <!-- fuct item --> */}
+            <div className="col col-xl-3 col-md-3 col-sm-6 border-line-v">
+              <div className="fuct-item">
+                <div className="icon">
+                  <span className="fa fa-star"></span>
+                </div>
+                <div className="name">Agile Model</div>
+              </div>
+            </div>
+
+            {/* <!-- fuct item --> */}
+            <div className="col col-xl-3 col-md-3 col-sm-6 border-line-v">
+              <div className="fuct-item">
+                <div className="icon">
+                  <span className="fa fa-github"></span>
+                </div>
+                <div className="name">Git workflow</div>
+              </div>
+            </div>
+
+            {/* <!-- fuct item --> */}
+            <div className="col col-xl-3 col-md-3 col-sm-6 border-line-v">
+              <div className="fuct-item">
+                <div className="icon">
+                  <span className="fa fa-rocket"></span>
+                </div>
+                <div className="name">Zeplin</div>
+              </div>
+            </div>
+
+            {/* <!-- fuct item --> */}
+            <div className="col col-xl-3 col-md-3 col-sm-6 border-line-v">
+              <div className="fuct-item">
+                <div className="icon">
+                  <span className="fa fa-adjust"></span>
+                </div>
+                <div className="name">VS Code</div>
+              </div>
+            </div>
+
+            <div className="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;

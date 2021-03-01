@@ -1,6 +1,12 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "imharshm portfolio",
+  "short_name": "imharshm",
+  "description": "UI Developer with 7 years of Experience",
+  "start_url": ".",
+  "orientation": "portrait",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "display": "standalone",
   "icons": [
     {
       "src": "favicon.ico",
@@ -17,9 +23,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
