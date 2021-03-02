@@ -1,8 +1,16 @@
 import React from "react";
+import useWindowDimensions from "../common/WindowDimension";
 
-const Contact = () => {
+const Contact = ({ show }) => {
+  const { width } = useWindowDimensions();
+
   return (
-    <div className="card-inner contacts fadeOutLeft" id="contacts-card">
+    <div
+      className={`card-inner animated ${
+        width > 1023 ? (show ? "fadeInLeft active" : "fadeOutLeft hidden") : ""
+      }`}
+      id="contact-card"
+    >
       <div className="card-wrap">
         {/* <!-- Conacts Info --> */}
         <div className="content contacts">

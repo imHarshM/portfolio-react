@@ -1,8 +1,16 @@
 import React from "react";
+import useWindowDimensions from "../common/WindowDimension";
 
-const About = () => {
+const About = ({ show }) => {
+  const { width } = useWindowDimensions();
+
   return (
-    <div className="card-inner animated active" id="about-card">
+    <div
+      className={`card-inner animated ${
+        width > 1023 ? (show ? "fadeInLeft active" : "fadeOutLeft hidden") : ""
+      }`}
+      id="about-card"
+    >
       <div className="card-wrap">
         {/* <!-- About --> */}
         <div className="content about">

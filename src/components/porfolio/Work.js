@@ -1,9 +1,17 @@
 import React from "react";
 import { Work1, Work2, Work3, Work4, Work5, Work6, Work7 } from "../common/Images";
+import useWindowDimensions from "../common/WindowDimension";
 
-const Work = () => {
+const Work = ({ show }) => {
+  const { width } = useWindowDimensions();
+
   return (
-    <div className="card-inner work" id="works-card">
+    <div
+      className={`card-inner animated ${
+        width > 1023 ? (show ? "fadeInLeft active" : "fadeOutLeft hidden") : ""
+      }`}
+      id="work-card"
+    >
       <div className="card-wrap">
         {/* <!-- Work --> */}
         <div className="content work">
