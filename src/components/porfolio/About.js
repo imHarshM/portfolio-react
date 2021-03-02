@@ -25,13 +25,15 @@ const About = ({ show }) => {
               <ul className="text-box">
                 <li>
                   A result oriented 6.6 years of professional experience in
-                  <strong>UI/ Front End Web Development</strong> using different types of Web
+                  <strong> UI/ Front End Web Development</strong> using different types of Web
                   Technologies.
                 </li>
                 <li>
                   Strong development and hands on experience in
                   <strong>
-                    React JS, Angular, HTML5, CSS3, SASS, SCSS, Bootstrap, JavaScript and jQuery.
+                    {" "}
+                    React JS, Styled Component, Storybook, Angular, HTML5, CSS3, SASS,
+                    SCSS,Bootstrap, JavaScript and jQuery.
                   </strong>
                 </li>
                 <li>
@@ -40,21 +42,21 @@ const About = ({ show }) => {
                 </li>
                 <li>
                   Strong experience with <strong>Cross Browser Compatibility issues</strong> and
-                  <strong>Optimization of </strong> for fast loading, including CSS, JavaScript and
+                  <strong> Optimization of </strong> for fast loading, including CSS, JavaScript and
                   HTML minify and best practices of
-                  <strong>Responsive Web Design (RWD)</strong> using Media Queries.
+                  <strong> Responsive Web Design (RWD)</strong> using Media Queries.
                 </li>
                 <li>
                   Working experience in parallax scrolling single page websites and web portals.
                 </li>
                 <li>
                   Good understanding of <strong>OOPS Concept</strong> and
-                  <strong>Database</strong>.
+                  <strong> Database</strong>.
                 </li>
                 <li>Good understanding of Web application development cycle.</li>
                 <li>
                   Well experienced in using version control systems
-                  <strong>SVN, GIT, Bit Bucket</strong>.
+                  <strong> SVN, GIT, Bit Bucket</strong>.
                 </li>
                 <li>Independent problem solving ability and easily adopting new technologies.</li>
                 <li>
@@ -62,9 +64,11 @@ const About = ({ show }) => {
                   Healthcare domain.
                 </li>
                 <li>
-                  Areas worked on –
+                  Areas worked on–
                   <strong>
-                    PSD to HTML, Email Template, Signature Template, Audio/Video, Animations
+                    {" "}
+                    PSD to HTML, React bootstrap, Material-UI, Email Template, Signature Template,
+                    SVG, Audio/Video, Animations, Metatag
                   </strong>
                   .
                 </li>
@@ -85,7 +89,6 @@ const About = ({ show }) => {
                 <li>Responsive Bootstrap Websites</li>
                 <li>Responsive eCommerce Website</li>
                 <li>PSD/JPG/PNG to HTML5</li>
-                <li>PDF to HTML5</li>
               </ul>
             </div>
             <div className="clear"></div>

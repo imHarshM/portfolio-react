@@ -24,11 +24,11 @@
 
 @media (min-width: 1024px) {
   .row .col.col-xl-12 {
-    width: 99.996%;
+    width: 100%;
   }
 
   .row .col.col-xl-11 {
-    width: 91.663%;
+    width: 91.666667%;
   }
 
   .row .col.col-xl-10 {
@@ -36,49 +36,49 @@
   }
 
   .row .col.col-xl-9 {
-    width: 74.997%;
+    width: 75%;
   }
 
   .row .col.col-xl-8 {
-    width: 66.664%;
+    width: 66.666667%;
   }
 
   .row .col.col-xl-7 {
-    width: 58.331%;
+    width: 58.333333%;
   }
 
   .row .col.col-xl-6 {
-    width: 49.998%;
+    width: 50%;
   }
 
   .row .col.col-xl-5 {
-    width: 41.665%;
+    width: 41.666667%;
   }
 
   .row .col.col-xl-4 {
-    width: 33.332%;
+    width: 33.333%;
   }
 
   .row .col.col-xl-3 {
-    width: 24.999%;
+    width: 25%;
   }
 
   .row .col.col-xl-2 {
-    width: 16.666%;
+    width: 16.666667%;
   }
 
   .row .col.col-xl-1 {
-    width: 8.333%;
+    width: 8.33333%;
   }
 }
 
 @media (max-width: 1023px) {
   .row .col.col-md-12 {
-    width: 99.996%;
+    width: 100%;
   }
 
   .row .col.col-md-11 {
-    width: 91.663%;
+    width: 91.666667%;
   }
 
   .row .col.col-md-10 {
@@ -86,49 +86,49 @@
   }
 
   .row .col.col-md-9 {
-    width: 74.997%;
+    width: 75%;
   }
 
   .row .col.col-md-8 {
-    width: 66.664%;
+    width: 66.666667%;
   }
 
   .row .col.col-md-7 {
-    width: 58.331%;
+    width: 58.333333%;
   }
 
   .row .col.col-md-6 {
-    width: 49.998%;
+    width: 50%;
   }
 
   .row .col.col-md-5 {
-    width: 41.665%;
+    width: 41.666667%;
   }
 
   .row .col.col-md-4 {
-    width: 33.332%;
+    width: 33.333%;
   }
 
   .row .col.col-md-3 {
-    width: 24.999%;
+    width: 25%;
   }
 
   .row .col.col-md-2 {
-    width: 16.666%;
+    width: 16.666667%;
   }
 
   .row .col.col-md-1 {
-    width: 8.333%;
+    width: 8.33333%;
   }
 }
 
 @media (max-width: 560px) {
   .row .col.col-sm-12 {
-    width: 99.996%;
+    width: 100%;
   }
 
   .row .col.col-sm11 {
-    width: 91.663%;
+    width: 91.666667%;
   }
 
   .row .col.col-sm10 {
@@ -136,39 +136,39 @@
   }
 
   .row .col.col-sm9 {
-    width: 74.997%;
+    width: 75%;
   }
 
   .row .col.col-sm8 {
-    width: 66.664%;
+    width: 66.666667%;
   }
 
   .row .col.col-sm7 {
-    width: 58.331%;
+    width: 58.333333%;
   }
 
   .row .col.col-sm-6 {
-    width: 49.998%;
+    width: 50%;
   }
 
   .row .col.col-sm5 {
-    width: 41.665%;
+    width: 41.666667%;
   }
 
   .row .col.col-sm4 {
-    width: 33.332%;
+    width: 33.333%;
   }
 
   .row .col.col-sm3 {
-    width: 24.999%;
+    width: 25%;
   }
 
   .row .col.col-sm2 {
-    width: 16.666%;
+    width: 16.666667%;
   }
 
   .row .col.col-sm1 {
-    width: 8.333%;
+    width: 8.33333%;
   }
 }
 
@@ -206,12 +206,37 @@
   height: 100%;
   background: #1dc8cd;
   opacity: 1;
-  -webkit-animation: sk-bounce 2s infinite ease-in-out;
-  animation: sk-bounce 2s infinite ease-in-out;
+  -webkit-animation: circle-bounce 2s infinite ease-in-out;
+  animation: circle-bounce 2s infinite ease-in-out;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   -khtml-border-radius: 50%;
+}
+
+/* preloader */
+@-webkit-keyframes circle-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes circle-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
 }
 
 .preloader .spinner .double-bounce2 {
@@ -285,9 +310,23 @@ strong {
   top: 0;
   width: 100%;
   height: 1px;
-  background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
-  background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
-  background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  background: -moz-radial-gradient(
+    left,
+    ellipse cover,
+    rgba(197, 202, 213, 0.15) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background: -webkit-radial-gradient(
+    left,
+    ellipse cover,
+    rgba(197, 202, 213, 0.15) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background: radial-gradient(
+    ellipse at left,
+    rgba(197, 202, 213, 0.15) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
 }
 
 .lnk,
@@ -323,9 +362,23 @@ input[type="submit"] {
   top: 0;
   width: 1px;
   height: 100%;
-  background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
-  background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
-  background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  background: -moz-radial-gradient(
+    top,
+    ellipse cover,
+    rgba(197, 202, 213, 0.15) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background: -webkit-radial-gradient(
+    top,
+    ellipse cover,
+    rgba(197, 202, 213, 0.15) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background: radial-gradient(
+    ellipse at top,
+    rgba(197, 202, 213, 0.15) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
 }
 
 .lnk .ion,
@@ -798,139 +851,4 @@ input[type="file"] {
 /* clearing */
 .clear {
   clear: both;
-}
-
-/* 6. Animations */
-/* flip cards */
-.FlipIn {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  -webkit-animation-duration: 0.7s !important;
-  animation-duration: 0.7s !important;
-  -webkit-animation-name: FlipIn;
-  animation-name: FlipIn;
-}
-
-@-webkit-keyframes FlipIn {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
-
-@keyframes FlipIn {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
-
-.FlipOut {
-  -webkit-animation-duration: 0.7s !important;
-  animation-duration: 0.7s !important;
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  -webkit-animation-name: FlipOut;
-  animation-name: FlipOut;
-}
-
-@-webkit-keyframes FlipOut {
-  from {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-
-  30% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    opacity: 0;
-  }
-}
-
-@keyframes FlipOut {
-  from {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-
-  30% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    opacity: 0;
-  }
-}
-
-/* preloader */
-@-webkit-keyframes sk-bounce {
-  0%,
-  100% {
-    -webkit-transform: scale(0);
-  }
-
-  50% {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes sk-bounce {
-  0%,
-  100% {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-  }
 }

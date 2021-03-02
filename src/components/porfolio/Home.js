@@ -41,7 +41,7 @@ const Home = () => {
             className="lnk"
             target="_blank"
           >
-            <span className="text">Download CV</span>
+            <span className="text">Download CV </span>
             <i className="fa fa-download"></i>
           </a>
           <a href="" className="lnk discover">
