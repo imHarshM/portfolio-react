@@ -22,7 +22,7 @@ const App = () => {
   const handleActive = (e) => {
     document
       .getElementById(e + "-card")
-      .scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
+      .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     setActiveMenu(e);
   };
 
