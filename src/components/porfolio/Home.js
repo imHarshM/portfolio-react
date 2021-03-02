@@ -1,7 +1,7 @@
 import React from "react";
 import { ProfilePic } from "../common/Images";
 
-const Home = () => {
+const Home = ({ handleActive, activeMenu }) => {
   return (
     <div className="card-started" id="home-card">
       {/* <!-- Profile --> */}
@@ -44,7 +44,10 @@ const Home = () => {
             <span className="text">Download CV </span>
             <i className="fa fa-download"></i>
           </a>
-          <a href="" className="lnk discover">
+          <a
+            onClick={() => handleActive("contact")}
+            className={`lnk discover ${activeMenu === "contact" ? "active" : ""}`}
+          >
             <span className="text">Contact Me</span>
             <span className="arrow"></span>
           </a>

@@ -341,6 +341,7 @@ input[type="submit"] {
 
 .lnk,
 .button {
+  cursor: pointer;
   position: relative;
   float: left;
   width: 50%;
@@ -449,7 +450,9 @@ input[type="submit"] {
 }
 
 .lnk:hover,
-.button:hover {
+.lnk.active,
+.button:hover,
+.button.active {
   color: #1dc8cd;
 }
 

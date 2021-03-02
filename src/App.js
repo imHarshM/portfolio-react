@@ -32,7 +32,7 @@ const App = () => {
 
       <div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
         <Menu handleActive={handleActive} activeMenu={activeMenu} />
-        <Home />
+        <Home handleActive={handleActive} activeMenu={activeMenu} />
 
         <About show={activeMenu === "about"} />
         <Resume show={activeMenu === "resume"} />
