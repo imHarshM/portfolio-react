@@ -34,7 +34,7 @@ const Resume = ({ show }) => {
                   <div className="date">2019 - Present</div>
                   <div className="name">Senior UI Developer</div>
                   <div className="company">
-                    <a href="https://www.torqus.com/" target="_blank">
+                    <a href="https://www.torqus.com/" target="_blank" rel="noreferrer">
                       Torqus System Pvt Ltd
                     </a>
                   </div>
@@ -49,7 +49,7 @@ const Resume = ({ show }) => {
                   <div className="date">2017 - 2019</div>
                   <div className="name">UI Developer</div>
                   <div className="company">
-                    <a href="http://www.scorgtechnologies.com/" target="_blank">
+                    <a href="http://www.scorgtechnologies.com/" target="_blank" rel="noreferrer">
                       Scorg Technologies Pvt Ltd
                     </a>
                   </div>
@@ -67,7 +67,7 @@ const Resume = ({ show }) => {
                   <div className="date">2015 - 2017</div>
                   <div className="name">UI Developer</div>
                   <div className="company">
-                    <a href="http://www.pasistence.com/" target="_blank">
+                    <a href="http://www.pasistence.com/" target="_blank" rel="noreferrer">
                       Pasistence Consultancy Services Pvt Ltd
                     </a>
                   </div>
@@ -83,7 +83,7 @@ const Resume = ({ show }) => {
                   <div className="date">2014 - 2015</div>
                   <div className="name">Junior Software Developer</div>
                   <div className="company">
-                    <a href="https://www.vishwjeet.com/" target="_blank">
+                    <a href="https://www.vishwjeet.com/" target="_blank" rel="noreferrer">
                       Vishwjeet Green Power Pvt Ltd
                     </a>
                   </div>

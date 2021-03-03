@@ -26,7 +26,7 @@ const Work = ({ show }) => {
             <div className="col col-xl-12 col-md-12 col-sm-12 border-line-h">
               <div className="box-item">
                 <div className="image">
-                  <a href="https://pos.torqus.com" target="_blank">
+                  <a href="https://pos.torqus.com" target="_blank" rel="noreferrer">
                     <img src={Work1} alt="work-1" />
                     <span className="info">
                       <span className="fa fa-document-text"></span>
@@ -53,7 +53,7 @@ const Work = ({ show }) => {
             <div className="col col-xl-12 col-md-12 col-sm-12 border-line-h">
               <div className="box-item">
                 <div className="image">
-                  <a href="https://scm.torqus.com/" target="_blank">
+                  <a href="https://scm.torqus.com/" target="_blank" rel="noreferrer">
                     <img src={Work2} alt="work-2" />
                     <span className="info">
                       <span className="fa fa-document-text"></span>
@@ -82,7 +82,7 @@ const Work = ({ show }) => {
             <div className="col col-xl-12 col-md-12 col-sm-12 border-line-h">
               <div className="box-item">
                 <div className="image">
-                  <a href="https://worldhelpgroup.org/" target="_blank">
+                  <a href="https://worldhelpgroup.org/" target="_blank" rel="noreferrer">
                     <img src={Work3} alt="work-3" />
                     <span className="info">
                       <span className="fa fa-document-text"></span>
@@ -108,7 +108,7 @@ const Work = ({ show }) => {
             <div className="col col-xl-12 col-md-12 col-sm-12 border-line-h">
               <div className="box-item">
                 <div className="image">
-                  <a href="http://www.scorgtechnologies.com/" target="_blank">
+                  <a href="http://www.scorgtechnologies.com/" target="_blank" rel="noreferrer">
                     <img src={Work4} alt="work-4" />
                     <span className="info">
                       <span className="fa fa-document-text"></span>
@@ -137,6 +137,7 @@ const Work = ({ show }) => {
                   <a
                     href="https://drrescribe.com/application/app.html#/access/login"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img src={Work5} alt="work-5" />
                     <span className="info">
@@ -167,7 +168,7 @@ const Work = ({ show }) => {
             <div className="col col-xl-12 col-md-12 col-sm-12 border-line-h">
               <div className="box-item">
                 <div className="image">
-                  <a href="http://vedproductions.com/" target="_blank">
+                  <a href="http://vedproductions.com/" target="_blank" rel="noreferrer">
                     <img src={Work6} alt="work-6" />
                     <span className="info">
                       <span className="fa fa-document-text"></span>
@@ -191,7 +192,7 @@ const Work = ({ show }) => {
             <div className="col col-xl-12 col-md-12 col-sm-12 border-line-h">
               <div className="box-item">
                 <div className="image">
-                  <a href="https://www.pdccbank.com/" target="_blank">
+                  <a href="https://www.pdccbank.com/" target="_blank" rel="noreferrer">
                     <img src={Work7} alt="work-7" />
                     <span className="info">
                       <span className="fa fa-document-text"></span>

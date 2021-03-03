@@ -9,7 +9,7 @@ const Menu = ({ handleActive, activeMenu }) => {
             className={activeMenu === "about" ? "active" : ""}
             onClick={() => handleActive("about")}
           >
-            <a>
+            <a href="#/">
               <i className="fa fa-user"></i>
               <span className="link">About</span>
             </a>
@@ -18,7 +18,7 @@ const Menu = ({ handleActive, activeMenu }) => {
             className={activeMenu === "resume" ? "active" : ""}
             onClick={() => handleActive("resume")}
           >
-            <a>
+            <a href="#/">
               <i className="fa fa-list-alt"></i>
               <span className="link">Resume</span>
             </a>
@@ -27,7 +27,7 @@ const Menu = ({ handleActive, activeMenu }) => {
             className={activeMenu === "work" ? "active" : ""}
             onClick={() => handleActive("work")}
           >
-            <a>
+            <a href="#/">
               <i className="fa fa-paint-brush"></i>
               <span className="link">Work</span>
             </a>
@@ -36,7 +36,7 @@ const Menu = ({ handleActive, activeMenu }) => {
             className={activeMenu === "contact" ? "active" : ""}
             onClick={() => handleActive("contact")}
           >
-            <a>
+            <a href="#/">
               <i className="fa fa-address-card"></i>
               <span className="link">Contact</span>
             </a>

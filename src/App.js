@@ -13,6 +13,7 @@ const App = () => {
   const [activeMenu, setActiveMenu] = useState("about");
 
   useEffect(() => {
+    document.addEventListener("scroll", () => {});
     //show loader on load
     setTimeout(() => {
       setIsLoaded(false);
@@ -20,17 +21,21 @@ const App = () => {
   }, []);
 
   const handleActive = (e) => {
+    setActiveMenu(e);
     document
       .getElementById(e + "-card")
       .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-    setActiveMenu(e);
   };
 
   return (
-    <div class="page">
+    <div className="page">
       {isLoaded && <Loader />}
 
-      <div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+      <div
+        className="container opened"
+        data-animation-in="fadeInLeft"
+        data-animation-out="fadeOutLeft"
+      >
         <Menu handleActive={handleActive} activeMenu={activeMenu} />
         <Home handleActive={handleActive} activeMenu={activeMenu} />
 

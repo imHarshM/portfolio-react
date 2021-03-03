@@ -125,7 +125,7 @@ const Contact = ({ show }) => {
           <div className="row">
             <div className="col border-line-v">
               <div className="contact_form">
-                <form id="contact-form" method="post" novalidate="novalidate">
+                <form id="contact-form" method="post" noValidate="novalidate">
                   <div className="row">
                     <div className="col col-xl-6 col-md-6 col-sm-12">
                       <div className="group-val">
@@ -144,14 +144,13 @@ const Contact = ({ show }) => {
                     </div>
                   </div>
                   <div className="align-left">
-                    <a
-                      href="#"
+                    <button
                       className="button"
-                      onclick="$('#contact-form').submit(); return false;"
+                      //  onClick="$('#contact-form').submit(); return false;"
                     >
                       <span className="text">Send Message</span>
                       <span className="arrow"></span>
-                    </a>
+                    </button>
                   </div>
                 </form>
                 <div className="alert-success">
