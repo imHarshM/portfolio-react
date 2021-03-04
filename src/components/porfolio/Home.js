@@ -1,5 +1,5 @@
 import React from "react";
-import { ProfilePic } from "../common/Images";
+import { ProfilePic } from "../utils/Images";
 
 const Home = ({ handleActive, activeMenu }) => {
   return (

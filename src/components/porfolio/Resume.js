@@ -1,5 +1,5 @@
 import React from "react";
-import useWindowDimensions from "../common/WindowDimension";
+import useWindowDimensions from "../utils/WindowDimension";
 
 const Resume = ({ show }) => {
   const { width } = useWindowDimensions();

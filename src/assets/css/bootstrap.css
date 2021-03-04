@@ -582,8 +582,7 @@ button {
 }
 
 input:focus,
-textarea:focus,
-button:focus {
+textarea:focus {
   color: #171717;
   border-bottom: 1px solid #1dc8cd;
 }
@@ -603,8 +602,13 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:not([disabled]):hover {
+  color: #1dc8cd;
   border-bottom: 1px solid #1dc8cd;
+}
+
+button[disabled] {
+  cursor: not-allowed;
 }
 
 label,

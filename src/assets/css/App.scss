@@ -1167,13 +1167,20 @@ ul {
     }
   }
 }
-.alert-success {
-  display: none;
+.alert {
+  text-align: center;
+  &-success {
+    color: #1dc8cd;
+  }
+  &-error {
+    color: #f70003;
+  }
   p {
     margin: 0;
     font-size: 17px;
   }
 }
+
 .card-inner.work-post {
   -webkit-animation: none;
   animation: none;

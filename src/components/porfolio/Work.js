@@ -1,6 +1,6 @@
 import React from "react";
-import { Work1, Work2, Work3, Work4, Work5, Work6, Work7 } from "../common/Images";
-import useWindowDimensions from "../common/WindowDimension";
+import { Work1, Work2, Work3, Work4, Work5, Work6, Work7 } from "../utils/Images";
+import useWindowDimensions from "../utils/WindowDimension";
 
 const Work = ({ show }) => {
   const { width } = useWindowDimensions();
