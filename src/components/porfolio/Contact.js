@@ -162,7 +162,7 @@ const Contact = ({ show }) => {
                 </ul>
               </div>
             </div>
-            <div className="clear"></div>
+            <div className="clearfix"></div>
           </div>
         </div>
 
@@ -220,11 +220,12 @@ const Contact = ({ show }) => {
                           placeholder="Your Message"
                           value={contactData.message || ""}
                           onChange={(e) => handleChange(e)}
+                          rows="3"
                         ></textarea>
                       </div>
                     </div>
                   </div>
-                  <div className="align-left">
+                  <div className="text-left">
                     <button type="submit" disabled={submitDisabled}>
                       <span className="text">Send Message</span>
                       <span className="arrow"></span>
@@ -233,7 +234,7 @@ const Contact = ({ show }) => {
                 </form>
               </div>
             </div>
-            <div className="clear"></div>
+            <div className="clearfix"></div>
           </div>
         </div>
       </div>

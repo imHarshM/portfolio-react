@@ -91,7 +91,7 @@ const About = ({ show }) => {
                 <li>PSD/JPG/PNG to HTML5</li>
               </ul>
             </div>
-            <div className="clear"></div>
+            <div className="clearfix"></div>
           </div>
         </div>
 
@@ -160,7 +160,7 @@ const About = ({ show }) => {
               </div>
             </div>
 
-            <div className="clear"></div>
+            <div className="clearfix"></div>
           </div>
         </div>
 
@@ -213,7 +213,7 @@ const About = ({ show }) => {
               </div>
             </div>
 
-            <div className="clear"></div>
+            <div className="clearfix"></div>
           </div>
         </div>
       </div>

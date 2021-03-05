@@ -215,7 +215,7 @@ const Work = ({ show }) => {
               </div>
             </div>
 
-            <div className="clear"></div>
+            <div className="clearfix"></div>
           </div>
         </div>
       </div>

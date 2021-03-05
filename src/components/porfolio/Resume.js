@@ -12,16 +12,11 @@ const Resume = ({ show }) => {
       id="resume-card"
     >
       <div className="card-wrap">
-        {/* <!-- Resume --> */}
         <div className="content resume">
-          {/* <!-- title --> */}
           <div className="title">
             <div className="first-letter">Resume</div>
           </div>
-
-          {/* <!-- content --> */}
-          <div className="row">
-            {/* <!-- experience --> */}
+          <div className="row mx-lg-0">
             <div className="col col-xl-6 col-md-6 col-sm-12 border-line-v">
               <div className="resume-title border-line-h">
                 <div className="icon">
@@ -129,20 +124,16 @@ const Resume = ({ show }) => {
               </div>
             </div>
 
-            <div className="clear"></div>
+            <div className="clearfix"></div>
           </div>
         </div>
 
-        {/* <!-- Skills --> */}
         <div className="content skills">
-          {/* <!-- title --> */}
           <div className="title">
             <span className="first-word">My</span> Skills
           </div>
 
-          {/* <!-- content --> */}
           <div className="row">
-            {/* <!-- skill item --> */}
             <div className="col col-xl-6 col-md-6 col-sm-12 border-line-v">
               <div className="skills-list circles">
                 <div className="skill-title border-line-h">
@@ -206,7 +197,6 @@ const Resume = ({ show }) => {
               </div>
             </div>
 
-            {/* <!-- skill item --> */}
             <div className="col col-xl-6 col-md-6 col-sm-12 border-line-v">
               <div className="skills-list list">
                 <div className="skill-title border-line-h">
@@ -244,7 +234,7 @@ const Resume = ({ show }) => {
               </div>
             </div>
 
-            <div className="clear"></div>
+            <div className="clearfix"></div>
           </div>
         </div>
       </div>
