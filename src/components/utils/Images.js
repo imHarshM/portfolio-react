@@ -1,4 +1,4 @@
-import ProfilePic from "../../assets/img/profile.png";
+import ProfilePic from "../../assets/img/profile.jpg";
 import Work1 from "../../assets/img/work/work-1.jpg";
 import Work2 from "../../assets/img/work/work-2.jpg";
 import Work3 from "../../assets/img/work/work-3.jpg";
