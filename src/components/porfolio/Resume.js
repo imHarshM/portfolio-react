@@ -16,8 +16,8 @@ const Resume = ({ show }) => {
           <div className="title">
             <div className="first-letter">Resume</div>
           </div>
-          <div className="row mx-lg-0">
-            <div className="col col-xl-6 col-md-6 col-sm-12 border-line-v">
+          <div className="row mx-lg-0 pt-4">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 border-line-v">
               <div className="resume-title border-line-h">
                 <div className="icon">
                   <i className="fa fa-briefcase"></i>
@@ -95,7 +95,7 @@ const Resume = ({ show }) => {
             </div>
 
             {/* <!-- education --> */}
-            <div className="col col-xl-6 col-md-6 col-sm-12 border-line-v">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 border-line-v">
               <div className="resume-title border-line-h">
                 <div className="icon">
                   <i className="fa fa-university"></i>
@@ -133,8 +133,8 @@ const Resume = ({ show }) => {
             <span className="first-word">My</span> Skills
           </div>
 
-          <div className="row">
-            <div className="col col-xl-6 col-md-6 col-sm-12 border-line-v">
+          <div className="row pt-4">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 border-line-v">
               <div className="skills-list circles">
                 <div className="skill-title border-line-h">
                   <div className="icon">
@@ -197,7 +197,7 @@ const Resume = ({ show }) => {
               </div>
             </div>
 
-            <div className="col col-xl-6 col-md-6 col-sm-12 border-line-v">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 border-line-v">
               <div className="skills-list list">
                 <div className="skill-title border-line-h">
                   <div className="icon">

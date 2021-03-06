@@ -13,17 +13,13 @@ const Work = ({ show }) => {
       id="work-card"
     >
       <div className="card-wrap">
-        {/* <!-- Work --> */}
         <div className="content work">
-          {/* <!-- title --> */}
           <div className="title">
             <span className="first-word">Recent</span> Works
           </div>
 
-          {/* <!-- content --> */}
-          <div className="row border-line-v">
-            {/* <!-- work item --> */}
-            <div className="col col-xl-12 col-md-12 col-sm-12 border-line-h">
+          <div className="row pt-4 border-line-v">
+            <div className="col-xl-12 col-md-12 col-sm-12 mb-4 border-line-h">
               <div className="box-item">
                 <div className="image">
                   <a href="https://pos.torqus.com" target="_blank" rel="noreferrer">
@@ -49,8 +45,7 @@ const Work = ({ show }) => {
               </div>
             </div>
 
-            {/* <!-- work item --> */}
-            <div className="col col-xl-12 col-md-12 col-sm-12 border-line-h">
+            <div className="col-xl-12 col-md-12 col-sm-12 mb-4 border-line-h">
               <div className="box-item">
                 <div className="image">
                   <a href="https://scm.torqus.com/" target="_blank" rel="noreferrer">
@@ -78,8 +73,7 @@ const Work = ({ show }) => {
               </div>
             </div>
 
-            {/* <!-- work item --> */}
-            <div className="col col-xl-12 col-md-12 col-sm-12 border-line-h">
+            <div className="col-xl-12 col-md-12 col-sm-12 mb-4 border-line-h">
               <div className="box-item">
                 <div className="image">
                   <a href="https://worldhelpgroup.org/" target="_blank" rel="noreferrer">
@@ -104,8 +98,7 @@ const Work = ({ show }) => {
               </div>
             </div>
 
-            {/* <!-- work item --> */}
-            <div className="col col-xl-12 col-md-12 col-sm-12 border-line-h">
+            <div className="col-xl-12 col-md-12 col-sm-12 mb-4 border-line-h">
               <div className="box-item">
                 <div className="image">
                   <a href="http://www.scorgtechnologies.com/" target="_blank" rel="noreferrer">
@@ -130,8 +123,7 @@ const Work = ({ show }) => {
               </div>
             </div>
 
-            {/* <!-- work item --> */}
-            <div className="col col-xl-12 col-md-12 col-sm-12 border-line-h">
+            <div className="col-xl-12 col-md-12 col-sm-12 mb-4 border-line-h">
               <div className="box-item">
                 <div className="image">
                   <a
@@ -164,8 +156,7 @@ const Work = ({ show }) => {
               </div>
             </div>
 
-            {/* <!-- work item --> */}
-            <div className="col col-xl-12 col-md-12 col-sm-12 border-line-h">
+            <div className="col-xl-12 col-md-12 col-sm-12 mb-4 border-line-h">
               <div className="box-item">
                 <div className="image">
                   <a href="http://vedproductions.com/" target="_blank" rel="noreferrer">
@@ -188,8 +179,7 @@ const Work = ({ show }) => {
               </div>
             </div>
 
-            {/* <!-- work item --> */}
-            <div className="col col-xl-12 col-md-12 col-sm-12 border-line-h">
+            <div className="col-xl-12 col-md-12 col-sm-12 mb-4 border-line-h">
               <div className="box-item">
                 <div className="image">
                   <a href="https://www.pdccbank.com/" target="_blank" rel="noreferrer">

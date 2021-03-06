@@ -12,14 +12,11 @@ const About = ({ show }) => {
       id="about-card"
     >
       <div className="card-wrap">
-        {/* <!-- About --> */}
         <div className="content about">
-          {/* <!-- title --> */}
-          <div className="title">
+          <div className="title m-0">
             <span className="first-word">About</span> Me
           </div>
 
-          {/* <!-- content --> */}
           <div className="row">
             <div className="col border-line-v">
               <ul className="text-box">
@@ -95,17 +92,13 @@ const About = ({ show }) => {
           </div>
         </div>
 
-        {/* <!-- Services --> */}
         <div className="content services">
-          {/* <!-- title --> */}
           <div className="title">
             <span className="first-word">Working</span> Areas
           </div>
 
-          {/* <!-- content --> */}
           <div className="row service-items border-line-v">
-            {/* <!-- service item --> */}
-            <div className="col col-xl-6 col-md-6 col-sm-12 border-line-h">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 border-line-h">
               <div className="service-item">
                 <div className="icon">
                   <span className="fa fa-code"></span>
@@ -118,8 +111,7 @@ const About = ({ show }) => {
               </div>
             </div>
 
-            {/* <!-- service item --> */}
-            <div className="col col-xl-6 col-md-6 col-sm-12 border-line-h">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 border-line-h">
               <div className="service-item">
                 <div className="icon">
                   <span className="fa fa-paint-brush"></span>
@@ -132,8 +124,7 @@ const About = ({ show }) => {
               </div>
             </div>
 
-            {/* <!-- service item --> */}
-            <div className="col col-xl-6 col-md-6 col-sm-12">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4">
               <div className="service-item">
                 <div className="icon">
                   <span className="fa fa-html5"></span>
@@ -146,8 +137,7 @@ const About = ({ show }) => {
               </div>
             </div>
 
-            {/* <!-- service item --> */}
-            <div className="col col-xl-6 col-md-6 col-sm-12">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4">
               <div className="service-item">
                 <div className="icon">
                   <span className="fa fa-desktop"></span>
@@ -164,17 +154,13 @@ const About = ({ show }) => {
           </div>
         </div>
 
-        {/* <!-- Fun Fact --> */}
         <div className="content fuct">
-          {/* <!-- title --> */}
           <div className="title">
             <span className="first-word">Knowledge</span> About
           </div>
 
-          {/* <!-- content --> */}
           <div className="row fuct-items">
-            {/* <!-- fuct item --> */}
-            <div className="col col-xl-3 col-md-3 col-sm-6 border-line-v">
+            <div className="col-xl-3 col-md-3 col-sm-6 col-6 mb-4 border-line-v">
               <div className="fuct-item">
                 <div className="icon">
                   <span className="fa fa-star"></span>
@@ -183,8 +169,7 @@ const About = ({ show }) => {
               </div>
             </div>
 
-            {/* <!-- fuct item --> */}
-            <div className="col col-xl-3 col-md-3 col-sm-6 border-line-v">
+            <div className="col-xl-3 col-md-3 col-sm-6 col-6 mb-4 border-line-v">
               <div className="fuct-item">
                 <div className="icon">
                   <span className="fa fa-github"></span>
@@ -193,8 +178,7 @@ const About = ({ show }) => {
               </div>
             </div>
 
-            {/* <!-- fuct item --> */}
-            <div className="col col-xl-3 col-md-3 col-sm-6 border-line-v">
+            <div className="col-xl-3 col-md-3 col-sm-6 col-6 mb-4 border-line-v">
               <div className="fuct-item">
                 <div className="icon">
                   <span className="fa fa-rocket"></span>
@@ -203,8 +187,7 @@ const About = ({ show }) => {
               </div>
             </div>
 
-            {/* <!-- fuct item --> */}
-            <div className="col col-xl-3 col-md-3 col-sm-6 border-line-v">
+            <div className="col-xl-3 col-md-3 col-sm-6 col-6 mb-4 border-line-v">
               <div className="fuct-item">
                 <div className="icon">
                   <span className="fa fa-adjust"></span>

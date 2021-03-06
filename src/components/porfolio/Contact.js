@@ -191,7 +191,7 @@ const Contact = ({ show }) => {
                   onSubmit={handleSubmit}
                 >
                   <div className="row">
-                    <div className="col col-xl-6 col-md-6 col-sm-12">
+                    <div className="col-xl-6 col-md-6 col-sm-12 mb-4">
                       <div className="group-val">
                         <input
                           type="text"
@@ -202,7 +202,7 @@ const Contact = ({ show }) => {
                         />
                       </div>
                     </div>
-                    <div className="col col-xl-6 col-md-6 col-sm-12">
+                    <div className="col-xl-6 col-md-6 col-sm-12 mb-4">
                       <div className="group-val">
                         <input
                           type="text"
@@ -213,7 +213,7 @@ const Contact = ({ show }) => {
                         />
                       </div>
                     </div>
-                    <div className="col col-xl-12 col-md-12 col-sm-12">
+                    <div className="col-xl-12 col-md-12 col-sm-12 mb-4">
                       <div className="group-val">
                         <textarea
                           name="message"
