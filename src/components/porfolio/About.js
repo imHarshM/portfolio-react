@@ -18,7 +18,7 @@ const About = ({ show }) => {
           </div>
 
           <div className="row">
-            <div className="col border-line-v">
+            <div className="col-12 py-4">
               <ul className="text-box">
                 <li>
                   A result oriented 6.6 years of professional experience in
@@ -98,7 +98,7 @@ const About = ({ show }) => {
           </div>
 
           <div className="row service-items border-line-v">
-            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 border-line-h">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4">
               <div className="service-item">
                 <div className="icon">
                   <span className="fa fa-code"></span>
@@ -111,7 +111,7 @@ const About = ({ show }) => {
               </div>
             </div>
 
-            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 border-line-h">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4">
               <div className="service-item">
                 <div className="icon">
                   <span className="fa fa-paint-brush"></span>
@@ -160,7 +160,7 @@ const About = ({ show }) => {
           </div>
 
           <div className="row fuct-items">
-            <div className="col-xl-3 col-md-3 col-sm-6 col-6 mb-4 border-line-v">
+            <div className="col-xl-3 col-md-3 col-sm-6 col-6 mb-4">
               <div className="fuct-item">
                 <div className="icon">
                   <span className="fa fa-star"></span>
@@ -169,7 +169,7 @@ const About = ({ show }) => {
               </div>
             </div>
 
-            <div className="col-xl-3 col-md-3 col-sm-6 col-6 mb-4 border-line-v">
+            <div className="col-xl-3 col-md-3 col-sm-6 col-6 mb-4">
               <div className="fuct-item">
                 <div className="icon">
                   <span className="fa fa-github"></span>
@@ -178,7 +178,7 @@ const About = ({ show }) => {
               </div>
             </div>
 
-            <div className="col-xl-3 col-md-3 col-sm-6 col-6 mb-4 border-line-v">
+            <div className="col-xl-3 col-md-3 col-sm-6 col-6 mb-4">
               <div className="fuct-item">
                 <div className="icon">
                   <span className="fa fa-rocket"></span>
@@ -187,7 +187,7 @@ const About = ({ show }) => {
               </div>
             </div>
 
-            <div className="col-xl-3 col-md-3 col-sm-6 col-6 mb-4 border-line-v">
+            <div className="col-xl-3 col-md-3 col-sm-6 col-6 mb-4">
               <div className="fuct-item">
                 <div className="icon">
                   <span className="fa fa-adjust"></span>

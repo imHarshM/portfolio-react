@@ -73,7 +73,7 @@ const Contact = ({ show }) => {
           </div>
 
           <div className="row">
-            <div className="col col-xl-12 col-md-12 col-sm-12 border-line-v">
+            <div className="col-xl-12 col-md-12 col-sm-12 py-4">
               <div id="social-test">
                 <ul className="social">
                   <li className="linkedin">
@@ -172,7 +172,7 @@ const Contact = ({ show }) => {
           </div>
 
           <div className="row">
-            <div className="col border-line-v">
+            <div className="col-12 py-4">
               <div className="contact_form">
                 {errorMsg && (
                   <div className="alert-error">

@@ -17,16 +17,33 @@ const Resume = ({ show }) => {
             <div className="first-letter">Resume</div>
           </div>
           <div className="row mx-lg-0 pt-4">
-            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 border-line-v">
-              <div className="resume-title border-line-h">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4">
+              <div className="resume-title">
                 <div className="icon">
                   <i className="fa fa-briefcase"></i>
                 </div>
                 <div className="name">Experience</div>
               </div>
-              <div className="resume-items">
-                <div className="resume-item border-line-h active">
-                  <div className="date">2019 - Present</div>
+              <div className="resume-items px-3">
+                <div className="resume-item active">
+                  <div className="date">Aug 2020 - Present</div>
+                  <div className="duration">
+                    <i className="fa fa-circle"></i>8M
+                  </div>
+                  <div className="name">Senior UI Developer</div>
+                  <div className="company">
+                    <a href="https://www.altimetrik.com/" target="_blank" rel="noreferrer">
+                      Altimetrik
+                    </a>
+                  </div>
+                  <p>Working on react app, creatrin common component using storybook.</p>
+                  <p>Fixing UI issues and optimizing css code.</p>
+                </div>
+                <div className="resume-item">
+                  <div className="date">Feb 2019 - Aug 2020</div>
+                  <div className="duration">
+                    <i className="fa fa-circle"></i>1Y 7M
+                  </div>
                   <div className="name">Senior UI Developer</div>
                   <div className="company">
                     <a href="https://www.torqus.com/" target="_blank" rel="noreferrer">
@@ -40,8 +57,11 @@ const Resume = ({ show }) => {
                   </p>
                   <p>Optimize website performance using latest technology.</p>
                 </div>
-                <div className="resume-item border-line-h">
-                  <div className="date">2017 - 2019</div>
+                <div className="resume-item">
+                  <div className="date">Jul 2017 - Feb 2019</div>
+                  <div className="duration">
+                    <i className="fa fa-circle"></i>1Y 8M
+                  </div>
                   <div className="name">UI Developer</div>
                   <div className="company">
                     <a href="http://www.scorgtechnologies.com/" target="_blank" rel="noreferrer">
@@ -59,7 +79,10 @@ const Resume = ({ show }) => {
                   </p>
                 </div>
                 <div className="resume-item">
-                  <div className="date">2015 - 2017</div>
+                  <div className="date">Oct 2015 - May 2017</div>
+                  <div className="duration">
+                    <i className="fa fa-circle"></i>1Y 8M
+                  </div>
                   <div className="name">UI Developer</div>
                   <div className="company">
                     <a href="http://www.pasistence.com/" target="_blank" rel="noreferrer">
@@ -75,7 +98,10 @@ const Resume = ({ show }) => {
                   </p>
                 </div>
                 <div className="resume-item">
-                  <div className="date">2014 - 2015</div>
+                  <div className="date">Jan 2014 - Sep 2015</div>
+                  <div className="duration">
+                    <i className="fa fa-circle"></i>1Y 9M
+                  </div>
                   <div className="name">Junior Software Developer</div>
                   <div className="company">
                     <a href="https://www.vishwjeet.com/" target="_blank" rel="noreferrer">
@@ -93,23 +119,21 @@ const Resume = ({ show }) => {
                 </div>
               </div>
             </div>
-
-            {/* <!-- education --> */}
-            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 border-line-v">
-              <div className="resume-title border-line-h">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 pt-4 pt-md-0">
+              <div className="resume-title">
                 <div className="icon">
-                  <i className="fa fa-university"></i>
+                  <i className="fa fa-graduation-cap"></i>
                 </div>
                 <div className="name">Education</div>
               </div>
-              <div className="resume-items">
-                <div className="resume-item border-line-h">
+              <div className="resume-items px-3">
+                <div className="resume-item">
                   <div className="date">2009 - 2013</div>
                   <div className="name">North Maharashtra University</div>
                   <div className="company">Jalgaon, Maharashtra</div>
                   <p>Bachelor's Degree in Computer Science</p>
                 </div>
-                <div className="resume-item border-line-h">
+                <div className="resume-item">
                   <div className="date">2008 - 2009</div>
                   <div className="name">HSC</div>
                   <div className="company">Jamner, Maharashtra</div>
@@ -134,101 +158,116 @@ const Resume = ({ show }) => {
           </div>
 
           <div className="row pt-4">
-            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 border-line-v">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4">
               <div className="skills-list circles">
-                <div className="skill-title border-line-h">
-                  <div className="icon">
+                <div className="skill-title">
+                  <span className="icon">
                     <i className="fa fa-code"></i>
-                  </div>
-                  <div className="name">Coding</div>
+                  </span>
+                  <span className="name">Coding</span>
                 </div>
-                <ul>
+                <ul className="text-center">
                   <li>
-                    <div className="name">HTML CSS SCSS</div>
-                    <div className="progress p97">
+                    <div className="circle-progress p97">
                       <span>97%</span>
                       <div className="slice">
                         <div className="bar"></div>
                         <div className="fill"></div>
                       </div>
                     </div>
+                    <div className="name">HTML CSS SCSS</div>
                   </li>
                   <li>
+                    <div className="circle-progress p85">
+                      <span>85%</span>
+                      <div className="slice">
+                        <div className="bar"></div>
+                        <div className="fill"></div>
+                      </div>
+                    </div>
                     <div className="name">React JS</div>
-                    <div className="progress p85">
+                  </li>
+                  <li>
+                    <div className="circle-progress p85">
                       <span>85%</span>
                       <div className="slice">
                         <div className="bar"></div>
                         <div className="fill"></div>
                       </div>
                     </div>
-                  </li>
-                  <li>
                     <div className="name">JavaScript jQuery</div>
-                    <div className="progress p85">
-                      <span>85%</span>
-                      <div className="slice">
-                        <div className="bar"></div>
-                        <div className="fill"></div>
-                      </div>
-                    </div>
                   </li>
                   <li>
-                    <div className="name">Boostrap 3/4</div>
-                    <div className="progress p95">
+                    <div className="circle-progress p95">
                       <span>95%</span>
                       <div className="slice">
                         <div className="bar"></div>
                         <div className="fill"></div>
                       </div>
                     </div>
+                    <div className="name">Boostrap 3/4</div>
                   </li>
                   <li>
-                    <div className="name">Angular</div>
-                    <div className="progress p75">
+                    <div className="circle-progress p75">
                       <span>75%</span>
                       <div className="slice">
                         <div className="bar"></div>
                         <div className="fill"></div>
                       </div>
                     </div>
+                    <div className="name">Angular</div>
                   </li>
                 </ul>
               </div>
             </div>
-
-            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 border-line-v">
+            <div className="col-xl-6 col-md-6 col-sm-12 mb-4 pt-4 pt-md-0">
               <div className="skills-list list">
-                <div className="skill-title border-line-h">
-                  <div className="icon">
-                    <i className="fa fa-android-list"></i>
-                  </div>
-                  <div className="name">Knowledge</div>
+                <div className="skill-title">
+                  <span className="icon">
+                    <i className="fa fa-laptop"></i>
+                  </span>
+                  <span className="name">Knowledge</span>
                 </div>
                 <ul>
                   <li>
-                    <div className="name">Website design and development</div>
+                    <div className="name">
+                      <i className="fa fa-code"></i>Website design and development
+                    </div>
                   </li>
                   <li>
-                    <div className="name">Website hosting</div>
+                    <div className="name">
+                      <i className="fa fa-code"></i>Website hosting
+                    </div>
                   </li>
                   <li>
-                    <div className="name">Unit testing and debugging</div>
+                    <div className="name">
+                      <i className="fa fa-code"></i>Unit testing and debugging
+                    </div>
                   </li>
                   <li>
-                    <div className="name">Responsive web design</div>
+                    <div className="name">
+                      <i className="fa fa-code"></i>Responsive web design
+                    </div>
                   </li>
                   <li>
-                    <div className="name">Cross browser compatibility</div>
+                    <div className="name">
+                      <i className="fa fa-code"></i>Cross browser compatibility
+                    </div>
                   </li>
                   <li>
-                    <div className="name">Modern and mobile-ready</div>
+                    <div className="name">
+                      <i className="fa fa-code"></i>Modern and mobile-ready
+                    </div>
                   </li>
                   <li>
-                    <div className="name">Graphics and animations</div>
+                    <div className="name">
+                      <i className="fa fa-code"></i>Graphics and animations
+                    </div>
                   </li>
                   <li>
-                    <div className="name">Search engine optimization</div>
+                    <div className="name">
+                      <i className="fa fa-code"></i>Search engine optimization
+                    </div>
                   </li>
                 </ul>
               </div>
