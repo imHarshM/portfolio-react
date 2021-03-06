@@ -18,6 +18,7 @@ $fa-font-path: "~font-awesome/fonts";
   --title-border-color: rgba(0, 0, 0, 0.45);
   --input-border-color: #dcdcdc;
   --circle-progress-color: #dedede;
+  --border-color: #6d6d6d;
 }
 
 /* dark theme */
@@ -29,6 +30,7 @@ $fa-font-path: "~font-awesome/fonts";
   --title-border-color: rgba(197, 202, 213, 0.15);
   --input-border-color: #44454c;
   --circle-progress-color: #3e4148;
+  --border-color: #ffffff;
 }
 // bootstrap class overrites
 p {
@@ -87,7 +89,7 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.25);
-  border: 0px none #ffffff;
+  border: 0px none var(--border-color);
   border-radius: 0px;
   &:hover {
     background: #525965;
@@ -98,7 +100,7 @@ body {
 }
 ::-webkit-scrollbar-track {
   background: transparent;
-  border: 0px none #ffffff;
+  border: 0px none var(--border-color);
   border-radius: 50px;
   &:hover {
     background: transparent;
@@ -676,6 +678,16 @@ button {
       -moz-border-radius: 4px 4px 0 0;
       -webkit-border-radius: 4px 4px 0 0;
       -khtml-border-radius: 4px 4px 0 0;
+      text-align: right;
+      .theme-btn {
+        color: var(--input-border-color);
+        background: var(--border-color);
+        padding: 0.25rem 0.5rem;
+        &:focus,
+        &:hover {
+          box-shadow: none;
+        }
+      }
       &:before {
         content: "";
         position: absolute;
@@ -719,7 +731,7 @@ button {
         display: block;
         width: 100%;
         height: auto;
-        border: 5px solid #ffffff;
+        border: 5px solid var(--border-color);
         border-radius: 100%;
         -moz-border-radius: 100%;
         -webkit-border-radius: 100%;
@@ -940,7 +952,7 @@ button {
           -webkit-border-radius: 60px;
           -khtml-border-radius: 60px;
           margin: 0 auto;
-          color: #fff !important;
+          color: var(--border-color) !important;
           background: var(--primary-color) !important;
           .fa {
             display: block;
@@ -1308,7 +1320,7 @@ button {
           height: 32px;
           font-size: 32px;
           line-height: 32px;
-          color: #ffffff;
+          color: var(--border-color);
           transition: all 0.1s ease-in 0.4s;
           -moz-transition: all 0.1s ease-in 0.4s;
           -webkit-transition: all 0.1s ease-in 0.4s;
@@ -1371,7 +1383,7 @@ button {
       text-align: center;
       font-weight: 500;
       text-transform: uppercase;
-      background: #ffffff;
+      background: var(--border-color);
       strong {
         display: block;
         font-size: 20px;
@@ -1410,7 +1422,7 @@ button {
           display: inline-block;
           a {
             display: inline-flex;
-            background-color: #fff;
+            background-color: var(--border-color);
             width: 50px;
             height: 50px;
             justify-content: center;
@@ -1447,7 +1459,7 @@ button {
             a {
               background-color: $value;
               i {
-                color: #ffffff;
+                color: var(--border-color);
               }
             }
           }
@@ -1545,7 +1557,7 @@ button {
         max-width: 72px;
         height: auto;
         display: block;
-        background: #fff;
+        background: var(--border-color);
         box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
         -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
         .top-menu {
@@ -1818,7 +1830,7 @@ button {
           ul {
             display: flex;
             overflow: auto;
-            background: #fff;
+            background: var(--border-color);
             li {
               min-width: 20%;
               a {
@@ -1873,6 +1885,9 @@ button {
       }
       .slide {
         height: 50%;
+        .theme-btn {
+          margin-top: 10px;
+        }
       }
       .image {
         margin-top: 60px;

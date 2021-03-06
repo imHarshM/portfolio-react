@@ -1,16 +1,24 @@
 import React from "react";
 import { ProfilePic } from "../utils/Images";
 
-const Home = ({ handleActive, activeMenu }) => {
+const Home = ({ handleActive, activeMenu, theme, handleChangeTheme }) => {
   return (
     <div className="card-started" id="home-card">
       <div className="profile">
-        <div className="slide"></div>
+        <div className="slide">
+          <a
+            className="btn theme-btn"
+            href="#/"
+            rel="noreferrer"
+            onClick={() => handleChangeTheme()}
+          >
+            <i className={`fa fa-${theme === "light" ? "moon-o" : "sun-o"}`}></i>
+          </a>
+        </div>
 
         <div className="image">
           <img src={ProfilePic} alt="profile" />
         </div>
-
         <div className="title">Harshal H. Mahajan</div>
         <div className="subtitle">UI Developer</div>
 
