@@ -931,29 +931,10 @@ button {
           height: 60px;
           text-align: center;
           font-size: 32px;
-          color: var(--primary-color);
-          background: -moz-linear-gradient(
-            -45deg,
-            rgba(120, 204, 109, 0.4) 0%,
-            rgba(120, 204, 109, 0.01) 100%
-          );
-          background: -webkit-linear-gradient(
-            -45deg,
-            rgba(120, 204, 109, 0.4) 0%,
-            rgba(120, 204, 109, 0.01) 100%
-          );
-          background: linear-gradient(
-            135deg,
-            rgba(120, 204, 109, 0.4) 0%,
-            rgba(120, 204, 109, 0.01) 100%
-          );
           border-radius: 60px;
-          -moz-border-radius: 60px;
-          -webkit-border-radius: 60px;
-          -khtml-border-radius: 60px;
           margin: 0 auto;
-          color: var(--border-color) !important;
-          background: var(--primary-color) !important;
+          color: var(--circle-progress-color);
+          background: var(--primary-color);
           .fa {
             display: block;
             line-height: 60px;
@@ -1422,7 +1403,7 @@ button {
           display: inline-block;
           a {
             display: inline-flex;
-            background-color: var(--border-color);
+            background-color: var(--white);
             width: 50px;
             height: 50px;
             justify-content: center;
@@ -1459,7 +1440,7 @@ button {
             a {
               background-color: $value;
               i {
-                color: var(--border-color);
+                color: var(--white);
               }
             }
           }
