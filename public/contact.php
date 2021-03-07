@@ -24,6 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $message = $_POST['message'];
   }
   if (empty($errors)) {
+    $name = $_POST['name'];
     
     $emailBody = "
     <html>
@@ -32,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     </head>
     <body style=\"background-color:#fafafa;\">
     <div style=\"padding:20px;\">
-    Date: <span style=\"color:#888\">22 Mar</span>
+    Date: <span style=\"color:#888\">$name</span>
     <br>
     Email: <span style=\"color:#888\">$email</span>
     <br>
@@ -47,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     "MIME-Version: 1.0\r\n" . 
     "Content-Type: text/html; charset=iso-8859-1\r\n";
 
-    $to = 'contact@example.com';
+    $to = 'hmahajan38@gmail.com';
     $subject = 'Contacting you';
     
     if (mail($to, $subject, $emailBody, $headers)) {
