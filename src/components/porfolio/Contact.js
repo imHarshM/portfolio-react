@@ -40,7 +40,7 @@ const Contact = ({ show }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const API_PATH = "/contact.php";
+    const API_PATH = "https://imharshm.github.io/portfolio/contact.php";
 
     axios({
       method: "post",
@@ -175,12 +175,12 @@ const Contact = ({ show }) => {
             <div className="col-12 py-4">
               <div className="contact_form">
                 {errorMsg && (
-                  <div className="alert-error">
+                  <div className="mail-error">
                     <p>{errorMsg}</p>
                   </div>
                 )}
                 {successMsg && (
-                  <div className="alert-success">
+                  <div className="mail-success">
                     <p>{successMsg}</p>
                   </div>
                 )}
