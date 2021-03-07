@@ -11,7 +11,7 @@ import Contact from "./components/porfolio/Contact";
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(true);
   const [activeMenu, setActiveMenu] = useState("about");
-  const initialState = () => String(window.localStorage.getItem("theme") || null);
+  const initialState = () => String(window.localStorage.getItem("theme") || "dark");
   const [theme, setTheme] = useState(initialState);
 
   const handleChangeTheme = () => {
