@@ -43,7 +43,7 @@ const Contact = ({ show }) => {
     const API_PATH = "https://imharshm.github.io/portfolio/contact.php";
 
     axios({
-      method: "post",
+      method: "get",
       mode: "no-cors",
       url: `${API_PATH}`,
       headers: { "content-type": "application/json" },
