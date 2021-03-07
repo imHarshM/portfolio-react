@@ -1,5 +1,6 @@
 <?php
   
+  echo "calllll";
     $method = $_SERVER['REQUEST_METHOD'];
     if ($method == "OPTIONS") {
     header('Access-Control-Allow-Origin: *');
