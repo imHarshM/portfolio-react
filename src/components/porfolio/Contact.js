@@ -4,8 +4,7 @@ import axios from "axios";
 
 const Contact = ({ show }) => {
   const [contactData, setContactData] = useState({});
-  const [errorMsg, setErrorMsg] = useState();
-  const [successMsg, setSuccessMsg] = useState();
+  const [submitMsg, setSubmitMsg] = useState({});
   const [validationMsg, setValidationMsg] = useState({});
 
   const { width } = useWindowDimensions();
@@ -46,13 +45,17 @@ const Contact = ({ show }) => {
       headers: { "content-type": "application/json" },
       data: contactData,
     })
-      .then((res) => {
-        setSuccessMsg("Thanks, your message is sent successfully.");
-        console.log("data1" + res);
+      .then(() => {
+        setSubmitMsg({
+          text: "Thanks, your message is sent successfully.",
+          classText: "mail-success",
+        });
       })
       .catch((error) => {
-        setErrorMsg(error.message);
-        console.log(error.message);
+        setSubmitMsg({
+          text: error.message,
+          classText: "mail-error",
+        });
       });
   };
 
@@ -171,14 +174,9 @@ const Contact = ({ show }) => {
           <div className="row">
             <div className="col-12 py-4">
               <div className="contact_form">
-                {errorMsg && (
-                  <div className="mail-error">
-                    <p>{errorMsg}</p>
-                  </div>
-                )}
-                {successMsg && (
-                  <div className="mail-success">
-                    <p>{successMsg}</p>
+                {submitMsg && (
+                  <div className={submitMsg.classText}>
+                    <p>{submitMsg.text}</p>
                   </div>
                 )}
                 <form
