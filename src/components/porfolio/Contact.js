@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import useWindowDimensions from "../utils/WindowDimension";
-// import { postData } from "../utils/Method";
 import axios from "axios";
 
 const Contact = ({ show }) => {
   const [contactData, setContactData] = useState({});
   const [errorMsg, setErrorMsg] = useState();
   const [successMsg, setSuccessMsg] = useState();
-  const [submitDisabled, setSubmitDisabled] = useState(true);
-  // const [emailError, setEmailError] = useState(true);
-  // const [nameError, setNameError] = useState(true);
+  const [validationMsg, setValidationMsg] = useState({});
+
   const { width } = useWindowDimensions();
 
   const handleChange = (e) => {
@@ -18,12 +16,9 @@ const Contact = ({ show }) => {
       ...contactData,
       [name]: value,
     });
-    // setEmailError(validate(contactData).email);
-    // setNameError(validate(contactData).name);
-    Object.keys(validate(contactData)).length ? setSubmitDisabled(true) : setSubmitDisabled(false);
   };
 
-  const validate = (contactData) => {
+  const validateField = (contactData) => {
     //Email errors
     const errors = {};
     if (!contactData.email) {
@@ -35,11 +30,13 @@ const Contact = ({ show }) => {
     if (!contactData.name || contactData.name.length < 6) {
       errors.name = "Please enter fullname";
     }
-    return errors;
+    return setValidationMsg(errors);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    validateField(contactData);
+
     const API_PATH = "https://imharshm.github.io/portfolio/contact.php";
 
     axios({
@@ -201,17 +198,23 @@ const Contact = ({ show }) => {
                           onChange={(e) => handleChange(e)}
                         />
                       </div>
+                      {validationMsg && (
+                        <span className="d-block text-danger mt-1">{validationMsg.name}</span>
+                      )}
                     </div>
                     <div className="col-xl-6 col-md-6 col-sm-12 mb-4">
                       <div className="group-val">
                         <input
                           type="text"
                           name="email"
-                          placeholder="Email Address"
+                          placeholder="Email"
                           value={contactData.email || ""}
                           onChange={(e) => handleChange(e)}
                         />
                       </div>
+                      {validationMsg && (
+                        <span className="d-block text-danger mt-1">{validationMsg.email}</span>
+                      )}
                     </div>
                     <div className="col-xl-12 col-md-12 col-sm-12 mb-4">
                       <div className="group-val">
@@ -226,7 +229,7 @@ const Contact = ({ show }) => {
                     </div>
                   </div>
                   <div className="text-left">
-                    <button type="submit" disabled={submitDisabled}>
+                    <button type="submit">
                       <span className="text">Send Message</span>
                       <span className="arrow"></span>
                     </button>
