@@ -38,25 +38,27 @@ const Contact = ({ show }) => {
 
     const API_PATH = "https://imharshm.github.io/portfolio/contact.php";
 
-    axios({
-      method: "POST",
-      mode: "no-cors",
-      url: `${API_PATH}`,
-      headers: { "content-type": "application/json" },
-      data: contactData,
-    })
-      .then(() => {
-        setSubmitMsg({
-          text: "Thanks, your message is sent successfully.",
-          classText: "mail-success",
-        });
+    if (contactData.name && contactData.email) {
+      axios({
+        method: "POST",
+        mode: "no-cors",
+        url: `${API_PATH}`,
+        headers: { "content-type": "application/json" },
+        data: contactData,
       })
-      .catch((error) => {
-        setSubmitMsg({
-          text: error.message,
-          classText: "mail-error",
+        .then(() => {
+          setSubmitMsg({
+            text: "Thanks, your message is sent successfully.",
+            classText: "mail-success",
+          });
+        })
+        .catch((error) => {
+          setSubmitMsg({
+            text: error.message,
+            classText: "mail-error",
+          });
         });
-      });
+    }
   };
 
   return (
