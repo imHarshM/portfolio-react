@@ -32,32 +32,31 @@ const Contact = ({ show }) => {
     return setValidationMsg(errors);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
     validateField(contactData);
-
-    const API_PATH = "https://imharshm.github.io/portfolio/contact.php";
-
     if (contactData.name && contactData.email) {
-      axios({
-        method: "POST",
-        mode: "no-cors",
-        url: `${API_PATH}`,
-        headers: { "content-type": "application/json" },
-        data: contactData,
-      })
-        .then(() => {
+      const form = e.target;
+      const data = new FormData(form);
+      const xhr = new XMLHttpRequest();
+      xhr.open(form.method, form.action);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = () => {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          setContactData({});
           setSubmitMsg({
             text: "Thanks, your message is sent successfully.",
             classText: "mail-success",
           });
-        })
-        .catch((error) => {
+        } else {
           setSubmitMsg({
-            text: error.message,
+            text: "Error",
             classText: "mail-error",
           });
-        });
+        }
+      };
+      xhr.send(data);
     }
   };
 
@@ -184,6 +183,7 @@ const Contact = ({ show }) => {
                 <form
                   id="contact-form"
                   method="post"
+                  action="https://formspree.io/f/xaylrepd"
                   noValidate="novalidate"
                   onSubmit={handleSubmit}
                 >
