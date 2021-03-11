@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import useWindowDimensions from "../utils/WindowDimension";
-import axios from "axios";
 
 const Contact = ({ show }) => {
   const [contactData, setContactData] = useState({});
