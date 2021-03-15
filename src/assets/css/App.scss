@@ -583,12 +583,19 @@ button {
             }
             &:hover {
               a {
-                color: var(--primary-color);
-                .fa {
+                @media (hover: hover) and (pointer: fine) {
                   color: var(--primary-color);
                 }
+
+                .fa {
+                  @media (hover: hover) and (pointer: fine) {
+                    color: var(--primary-color);
+                  }
+                }
                 .link {
-                  color: var(--primary-color);
+                  @media (hover: hover) and (pointer: fine) {
+                    color: var(--primary-color);
+                  }
                 }
               }
             }
